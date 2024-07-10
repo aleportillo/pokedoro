@@ -1,0 +1,22 @@
+:root{
+    --fire: #e74c3c;
+    --electric: #f7c72f;
+    --grass: #3cba92;
+    --ground: #a55c4d;
+    --steel: #5c7f96;
+    --rock: #955f4b;
+    --water: #3a81c3;
+    --ice: #b6e1ff;
+    --psychic: #c96c95;
+    --ghost: #808288;
+    --shadow: #57595d;
+    --unknow: #888888;
+    --flying: #7b6b88  ;
+    --normal: #8e7b7a  ;
+    --poison: #b86484  ;
+    --fighting: #a68163  ;
+    --bug: #8e4a3b  ;
+    --dragon: #61b08d  ;
+    --fairy: #f17ca5  ;
+    --dark: #484848  ;
+}

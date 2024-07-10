@@ -14,6 +14,14 @@
     font-style: normal; 
 }
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./NotoSans/NotoSansJP-Black.ttf') format('truetype');
+         /* url('ruta/a/mi-fuente.woff') format('woff'); Fallback para navegadores más antiguos  */
+    font-weight: 900; 
+    font-style: bold; 
+}
+
 :root{
     --font-Londrina: "Londrina Solid", Arial, Helvetica, sans-serif; 
     --font-Noto: "Noto Sans", Arial, Helvetica, sans-serif; 

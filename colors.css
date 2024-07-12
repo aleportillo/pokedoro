@@ -1,22 +1,22 @@
-:root{
-    --fire: #e74c3c;
-    --electric: #f7c72f;
-    --grass: #3cba92;
-    --ground: #a55c4d;
-    --steel: #5c7f96;
-    --rock: #955f4b;
-    --water: #3a81c3;
-    --ice: #b6e1ff;
-    --psychic: #c96c95;
-    --ghost: #808288;
-    --shadow: #57595d;
-    --unknow: #888888;
-    --flying: #7b6b88  ;
-    --normal: #8e7b7a  ;
-    --poison: #b86484  ;
-    --fighting: #a68163  ;
-    --bug: #8e4a3b  ;
-    --dragon: #61b08d  ;
-    --fairy: #f17ca5  ;
-    --dark: #484848  ;
+:root {
+    --fire: #ff6f61;     
+    --electric: #ffcf4c; 
+    --grass: #4ecdc4;    
+    --ground: #d4a88c;   
+    --steel: #8493a8;    
+    --rock: #c88268;     
+    --water: #4a90e2;    
+    --ice: #a1eafb;      
+    --psychic: #e573b9;  
+    --ghost: #6b6e70;    
+    --shadow: #424446;   
+    --unknow: #999999;   
+    --flying: #6d5e8c;   
+    --normal: #b0a18f;   
+    --poison: #aa5781;   
+    --fighting: #c68642; 
+    --bug: #6d3e31;      
+    --dragon: #00a884;   
+    --fairy: #f68fad;    
+    --dark: #3d3d3d;     
 }

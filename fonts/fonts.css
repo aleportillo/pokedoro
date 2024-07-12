@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Londrina Solid';
     src: url('./Londrina/LondrinaSolid-Regular.ttf') format('truetype');
-         /* url('ruta/a/mi-fuente.woff') format('woff'); Fallback para navegadores más antiguos  */
     font-weight: normal; 
     font-style: normal; 
 }
@@ -9,7 +8,6 @@
 @font-face {
     font-family: 'Noto Sans';
     src: url('./NotoSans/NotoSansJP-Regular.ttf') format('truetype');
-         /* url('ruta/a/mi-fuente.woff') format('woff'); Fallback para navegadores más antiguos  */
     font-weight: normal; 
     font-style: normal; 
 }
@@ -17,7 +15,6 @@
 @font-face {
     font-family: 'Noto Sans';
     src: url('./NotoSans/NotoSansJP-Black.ttf') format('truetype');
-         /* url('ruta/a/mi-fuente.woff') format('woff'); Fallback para navegadores más antiguos  */
     font-weight: 900; 
     font-style: bold; 
 }

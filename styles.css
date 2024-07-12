@@ -94,7 +94,6 @@ body::after{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* position: relative; */
 }
 
 .pokemon__timer{
@@ -143,10 +142,7 @@ body::after{
     font-family: var(--font-Londrina);
     font-weight: bolder;
     margin: 0 1rem;
-    /* width: 100%; */
     display: inline;
-    /* display: inline-flex; */
-    /* justify-content: center; */
 }
 
 .pokemon__pomodoro-time--overlay{
@@ -191,7 +187,6 @@ body::after{
 
 .history{
     margin: 1rem 2rem;
-    /* border: 2px solid; */
     width: calc(40vw - 4rem);
     border-radius: 1rem;
     padding: 1rem;
@@ -211,7 +206,6 @@ body::after{
     width: 100%;
     position: relative;
     z-index: 4;
-    /* height: 100%; */
 }
 
 .history__item:before {

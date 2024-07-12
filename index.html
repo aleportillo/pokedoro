@@ -7,52 +7,52 @@
     
     <link rel="stylesheet" href="/fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
 
 </head>
 <body>
 
     <nav class="nav">
         <h1 class="nav__logo">POKEDORO</h1>
-        <div class="nav__buttons">
+        <!-- <div class="nav__buttons">
             <button class="nav__button nav__button--info">
                 <img src="./assets/icons/info.svg" alt="info icon">
             </button>
             <button class="nav__button">
                 <img src="./assets/icons/github.svg" alt="github icon">
             </button>
-        </div>
+        </div> -->
     </nav>
     
-    <section class="data">        
+    <section class="data">
         <section class="pokemon">
-            <div class="timer">
-                <span>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/8.gif" alt="">
+            <div class="pokemon__timer">
+                <span class="pokemon__timer-icon">
+                    <img id="pokemon-gif" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/8.gif" alt="">
                 </span>
-                <div class="pomodor">
-                    <p>25:00</p>
-                    <button>
-                        <img src="./assets/icons/info.svg" alt="info icon">
+                <div class="pokemon__pomodoro">
+                    <p class="pokemon__pomodoro-timer">                        
+                        <span class="pokemon__pomodoro-time">25:00</span>
+                        <span class="pokemon__pomodoro-time pokemon__pomodoro-time--overlay">25:00</span>
+                    </p>
+                    <button id="btn-play" class="pokemon__pomodoro-button">
+                        <img src="./assets/icons/play.svg" alt="play icon">
                     </button>
-                    <button>
-                        <img src="./assets/icons/info.svg" alt="info icon">
+                    <button id="btn-restart" class="pokemon__pomodoro-button">
+                        <img src="./assets/icons/restart.svg" alt="restart icon">
                     </button>
                 </div>
             </div>
-            <div class="pokemon-data">
-                <p>#0014</p>
-                <h2>SQUIRTLE</h2>
+            <div class="pokemon__data">
+                <p class="pokemon__data-id"></p>
+                <h2 class="pokemon__data-name"></h2>
             </div>
         </section>
         <section class="history">
-            <div>
-                <span>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/8.gif" alt="">
-                </span>
-                Complete: Short break
-            </div>
         </section>
     </section>
-    
+    <script src="./scripts/pokemon.js"></script>
+    <script src="./scripts/load-html.js"></script>
+    <script src="./scripts/pomodoro.js"></script>
 </body>
 </html>

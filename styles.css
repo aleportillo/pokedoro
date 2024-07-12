@@ -15,7 +15,7 @@ button{
 }
 
 body{
-    background-color: blueviolet;
+    background-color: var(--shadow);;
     background-blend-mode: soft-light, normal;
     width: 100vw;
     height: 100vh;
@@ -31,13 +31,6 @@ body::before{
     z-index: -1;
 }
 
-.data{
-    display: flex;
-    height: calc(100% - 89.6px);
-    overflow-y: auto;
-    position: relative;
-}
-
 body::after{
     background-image: url(https://cdn.vectorstock.com/i/preview-1x/75/93/pokeball-icon-sign-seamless-pattern-on-a-gray-vector-11297593.jpg);
     content: '';
@@ -50,7 +43,7 @@ body::after{
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     padding: 1rem 2rem;
@@ -71,7 +64,7 @@ body::after{
     align-items: center;
 }
 
-.nav__button:hover {
+.nav__button:hover, .pokemon__pomodoro-button:hover {
     transform: scale(1.1);
 }
 
@@ -87,37 +80,24 @@ body::after{
     width: 115%;
 }
 
+.data{
+    display: flex;
+    height: calc(100% - 89.6px);
+    overflow-y: auto;
+    position: relative;
+}
+
 .pokemon{
     position: sticky;
     inset: 0;
     width: 60vw;
-    /* background: rgba(255, 0, 0, 0.196); */
-    /* height: calc(100% - 89.6px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
 }
 
-p{
-    font-family: var(--font-Londrina);
-    font-weight: bolder;
-    font-size: 5rem;
-    margin: 0 1rem;
-    color: rgba(137, 43, 226, 0.36);
-}
-
-h2{
-    font-family: var(--font-Noto);
-    font-weight: bold;
-    font-size: 7rem;
-    margin-left: 2rem;
-    margin-top: -6rem;
-    text-shadow: 2px -5px 14px #0000005e;
-    color: blueviolet;
-}
-
-.timer{
+.pokemon__timer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +105,7 @@ h2{
     margin-top: -36%;
 }
 
-.timer span{
+.pokemon__timer-icon{
     height: 15rem;
     width: 15rem;
     display: flex;
@@ -133,7 +113,7 @@ h2{
     justify-content: center;
 }
 
-.timer span img{
+.pokemon__timer-icon img{
     width: auto;
     height: 100%;
     min-height: 100%;
@@ -143,39 +123,70 @@ h2{
     object-fit: contain;
 }
 
-.pomodor{
+.pokemon__pomodoro{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 14rem;
+    position: relative;
 }
 
-.pomodor p{
+.pokemon__pomodoro-timer{
+    position: relative;
+    width: 100%;
+}
+
+.pokemon__pomodoro-time{
+    color: white;
     font-size: 5rem;
-    color: rgb(137 43 226);
+    font-family: var(--font-Londrina);
+    font-weight: bolder;
+    margin: 0 1rem;
+    /* width: 100%; */
+    display: inline;
+    /* display: inline-flex; */
+    /* justify-content: center; */
+}
+
+.pokemon__pomodoro-time--overlay{
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.6;
+    inset: 0;
+}
+
+.pokemon__pomodoro-button{
+    width: 2.5rem;
+}
+
+.pokemon__pomodoro-button img{
     width: 100%;
 }
 
-.pomodor button{
-    width: 3.2rem;
-}
-
-.pomodor img{
-    width: 100%;
-}
-
-.pokemon-data{
+.pokemon__data{
     position: absolute;
     bottom: 1rem;
 }
 
-.pokemon-data p{
+.pokemon__data-id {
     font-family: var(--font-Londrina);
     font-weight: bolder;
     font-size: 8rem;
     margin: 0 1rem;
+    opacity: 0.4;
     color: rgba(137, 43, 226, 0.36);
+}
+
+.pokemon__data-name {
+    font-family: var(--font-Noto);
+    font-weight: bold;
+    font-size: 7rem;
+    margin-left: 2rem;
+    margin-top: -6rem;
+    text-shadow: -20px -9px 20px #0000003b;
+    color: blueviolet;
 }
 
 .history{
@@ -187,13 +198,49 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 2;
 }
 
-.history div{
+.history__item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: 1px solid;
     padding: 1rem;
     border-radius: 1rem;
+    border: 3px solid var(--card-color);
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    /* height: 100%; */
+}
+
+.history__item:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    inset: 0;
+    background: var(--card-color);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.history__item-icon {
+    border: 3px solid var(--card-color);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history__item-icon img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.history__item-text {
+    color: white;
+    font-family: var(--font-Noto);
 }
